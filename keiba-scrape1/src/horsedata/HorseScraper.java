@@ -2,6 +2,7 @@ package horsedata;
 
 import java.util.Scanner;
 
+
 public class HorseScraper {
 
 	public static void main(String[] args) {

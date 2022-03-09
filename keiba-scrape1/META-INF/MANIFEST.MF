@@ -1,0 +1,2 @@
+Main-Class: horsedata.HorseScraper
+Class-Path: ./lib/jsoup-1.14.3.jar
