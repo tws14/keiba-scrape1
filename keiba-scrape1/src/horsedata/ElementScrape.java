@@ -24,7 +24,7 @@ public class ElementScrape {
 	
 		try {
 				//書き込み用ファイル作成（任意のパス)
-				String fp = "/home/horsedata.text";
+				String fp = "/home/horsedata.csv";
 				File file = new File(fp);
 						bw = new BufferedWriter (new FileWriter(file, true));
 						bw.write("日付,開催,天候,R,レース名,頭数,枠番,馬番,着順,騎手,斤量,距離,馬場,タイム,通過,ペース,上がり");
