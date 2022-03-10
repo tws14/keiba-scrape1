@@ -7,6 +7,7 @@ import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 
+import org.apache.commons.lang3.math.NumberUtils;
 import org.jsoup.Jsoup;
 import org.jsoup.nodes.Document;
 import org.jsoup.nodes.Element;
@@ -55,20 +56,20 @@ public class ElementScrape {
 										   h.setDate(cells[0]);
 										   h.setWeather(cells[1]);
 										   h.setPlace(cells[2]);
-										   h.setRace(Integer.parseInt(cells[3]));
+										   h.setRace(NumberUtils.toInt(cells[3], 0));
 										   h.setRacename(cells[4]);
-										   h.setTousuu(Integer.parseInt(cells[6]));
-										   h.setWakuban(Integer.parseInt(cells[7]));
-										   h.setUmaban(Integer.parseInt(cells[8]));
-										   h.setTyakujun(Integer.parseInt(cells[11]));
+										   h.setTousuu(NumberUtils.toInt(cells[6], 0));
+										   h.setWakuban(NumberUtils.toInt(cells[7], 0));
+										   h.setUmaban(NumberUtils.toInt(cells[8], 0));
+										   h.setTyakujun(NumberUtils.toInt(cells[11], 0));
 										   h.setJockey(cells[12]);
-										   h.setHande(Double.parseDouble(cells[13]));
+										   h.setHande(NumberUtils.toDouble(cells[13],0));
 										   h.setCourse(cells[14]);
 										   h.setBaba(cells[15]);
 										   h.setTime(cells[17]);
 										   h.setTuuka(cells[20]);
 										   h.setPace(cells[21]);
-										   h.setSanharon(Double.parseDouble(cells[22]));
+										   h.setSanharon(NumberUtils.toDouble(cells[22], 0));
 										   
 										   list.add(h);
 					
